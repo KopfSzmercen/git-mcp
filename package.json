@@ -1,0 +1,27 @@
+{
+  "name": "gitmpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:inspect": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector pnpm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.1",
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.22",
+    "@inquirer/prompts": "^7.7.1",
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "ai": "^4.3.19",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.16.2",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "typescript": "^5.8.3"
+  }
+}
