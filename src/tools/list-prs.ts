@@ -118,7 +118,7 @@ function listPullRequestsTool(mcp: McpServer) {
             pullRequestsData.nodes || []
           );
 
-          hasNextPage = pullRequestsData.pageInfo.hasNextPage;
+          hasNextPage = pullRequestsData?.pageInfo?.hasNextPage || false;
           afterCursor = pullRequestsData.pageInfo.endCursor;
         }
 
