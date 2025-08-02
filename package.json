@@ -15,8 +15,11 @@
     "@ai-sdk/google": "^1.2.22",
     "@inquirer/prompts": "^7.7.1",
     "@modelcontextprotocol/sdk": "^1.17.0",
+    "@octokit/core": "^7.0.3",
     "ai": "^4.3.19",
-    "express": "^5.1.0"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "octokit": "^5.0.3"
   },
   "devDependencies": {
     "@modelcontextprotocol/inspector": "^0.16.2",

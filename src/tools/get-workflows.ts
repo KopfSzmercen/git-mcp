@@ -23,8 +23,6 @@ function getWorkflowsTool(mcpServer: McpServer) {
       try {
         const workflows = await database.getManyWorkflows(limit);
 
-        console.log(workflows);
-
         if (workflows.length === 0) {
           return {
             content: [
