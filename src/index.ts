@@ -7,6 +7,7 @@ import getWorkflowsTool from "./tools/get-workflows";
 import listPullRequestsTool from "./tools/list-prs";
 import getPrDetailsTool from "./tools/get-pr";
 import getCurrentGitHubRepo from "./tools/get-current-github-repo";
+import getPrDiffsTool from "./tools/get-pr-diffs";
 
 const server = new McpServer({
   name: "Test",
@@ -22,7 +23,8 @@ const registerToolFunctions = [
   registerGenerateAndSavePrSummaryTemplateTool,
   listPullRequestsTool,
   getPrDetailsTool,
-  getCurrentGitHubRepo
+  getCurrentGitHubRepo,
+  getPrDiffsTool
 ];
 
 const registerResourceFunctions = [registerPrSummaryTemplatesResource];
