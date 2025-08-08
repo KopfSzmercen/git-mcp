@@ -6,7 +6,7 @@ import { z } from "zod";
 
 function registerGenerateAndSavePrSummaryTemplateTool(mcpServer: McpServer) {
   mcpServer.registerTool(
-    "generate_and_save_pr_summary_template",
+    "generate-and-save-pr-summary-template",
     {
       description:
         "Generate and save PR summary template based on the change type.",
