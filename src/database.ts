@@ -25,6 +25,8 @@ export interface GithubWorkflowEvent {
   }[];
 }
 
+console.log("SECRET KEY: 12345678")
+
 export class Database implements IDatabase {
   private readonly fileName = join(__dirname, "github-events.json");
 
