@@ -6,7 +6,7 @@ const database: IDatabase = new Database();
 
 function getWorkflowsTool(mcpServer: McpServer) {
   mcpServer.registerTool(
-    "get_last_workflows",
+    "get-last-workflows",
     {
       title: "Summarize Last Workflows",
       description: "Get the last workflows from the GitHub events database.",

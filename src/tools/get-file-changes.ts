@@ -4,7 +4,7 @@ import { z } from "zod";
 
 function registerFileChangesTool(mcpServer: McpServer) {
   mcpServer.registerTool(
-    "get_git_file_changes",
+    "get-git-file-changes",
     {
       title: "Get Git File Changes",
       description:

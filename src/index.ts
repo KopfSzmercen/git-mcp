@@ -8,6 +8,8 @@ import listPullRequestsTool from "./tools/list-prs";
 import getPrDetailsTool from "./tools/get-pr";
 import getCurrentGitHubRepo from "./tools/get-current-github-repo";
 import getPrDiffsTool from "./tools/get-pr-diffs";
+import reviewSingleFileTool from "./tools/review-single-file";
+import addPrReviewCommentTool from "./tools/add-pr-review-comment";
 
 const server = new McpServer({
   name: "Test",
@@ -24,7 +26,9 @@ const registerToolFunctions = [
   listPullRequestsTool,
   getPrDetailsTool,
   getCurrentGitHubRepo,
-  getPrDiffsTool
+  getPrDiffsTool,
+  reviewSingleFileTool,
+  addPrReviewCommentTool
 ];
 
 const registerResourceFunctions = [registerPrSummaryTemplatesResource];
